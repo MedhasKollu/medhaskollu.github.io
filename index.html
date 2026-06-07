@@ -76,6 +76,21 @@
             border-radius: 20px;
         }
 
+        details summary {
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        details p {
+            margin-top: 15px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -88,8 +103,9 @@
 
 <header>
     <h1>Medhas Kollu</h1>
-    <p>Supply Chain Management & Computer Science Student</p>
-    <a href="https://linkedin.com/in/medhaskollu" class="btn">
+    <p>Supply Chain Management & Computer Science Student at Michigan State University</p>
+
+    <a href="https://linkedin.com/in/medhaskollu" class="btn" target="_blank">
         LinkedIn
     </a>
 </header>
@@ -98,10 +114,10 @@
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I'm a student at Michigan State University studying
-            Supply Chain Management and Computer Science.
-            I'm interested in technology, data analytics,
-            entrepreneurship, and software development.
+            I'm a student at Michigan State University studying Supply Chain
+            Management and Computer Science. My interests include software
+            development, data analytics, entrepreneurship, and using technology
+            to solve real-world problems.
         </p>
     </div>
 </section>
@@ -109,33 +125,56 @@
 <section>
     <h2>Projects</h2>
 
-    <div class="card">
-        <h3>Life Mate</h3>
+    <details class="card">
+        <summary>NBA Performance Analysis</summary>
         <p>
-            AI-powered personal assistant platform designed to help users
-            manage productivity, wellness, and daily life.
+            Leveraged SQL aggregations and filters to analyze NBA performance
+            data from 2004-2020, identifying trends in scoring efficiency,
+            three-point shooting, and home-court advantage to uncover factors
+            associated with team success.
         </p>
-    </div>
+    </details>
 
-    <div class="card">
-        <h3>CS50 Projects</h3>
+    <details class="card">
+        <summary>Startup Funding Analysis</summary>
         <p>
-            Collection of programming projects built while completing
-            Harvard's CS50 course.
+            Used SQL to analyze Crunchbase startup funding data, evaluating
+            funding patterns, company status, and industry trends to identify
+            high-potential investment opportunities.
         </p>
-    </div>
+    </details>
 
-    <div class="card">
-        <h3>NBA Data Analytics</h3>
+    <details class="card">
+        <summary>YouTube Trending Analysis</summary>
         <p>
-            Data analysis project exploring NBA team performance and
-            advanced statistics.
+            Queried and ranked YouTube trending video data using SQL to examine
+            engagement metrics, content categories, and publishing trends,
+            generating insights for content optimization.
         </p>
-    </div>
+    </details>
+
+    <details class="card">
+        <summary>London Transit Data Analysis</summary>
+        <p>
+            Analyzed Transport for London ridership data using SQL aggregation
+            techniques to uncover travel patterns, peak usage periods, and trip
+            purposes that support transit planning decisions.
+        </p>
+    </details>
+
+    <details class="card">
+        <summary>FIFA World Cup Simulator</summary>
+        <p>
+            Developed a World Cup tournament simulator that models group-stage
+            and knockout-round outcomes, automatically advancing teams through
+            each stage of the competition.
+        </p>
+    </details>
 </section>
 
 <section>
     <h2>Skills</h2>
+
     <div class="skills">
         <span class="skill">Python</span>
         <span class="skill">C++</span>
@@ -149,9 +188,16 @@
 
 <section>
     <h2>Contact</h2>
+
     <div class="card">
         <p>Email: medhaskollu@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/medhaskollu</p>
+
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/medhaskollu" target="_blank">
+                linkedin.com/in/medhaskollu
+            </a>
+        </p>
     </div>
 </section>
 
