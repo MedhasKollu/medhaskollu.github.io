@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medhas Kollu | Portfolio</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+color:white;line-height:1.6
+}
+@keyframes gradient{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+.navbar{
+position:sticky;top:0;z-index:1000;
+background:rgba(15,23,42,.85);
+backdrop-filter:blur(10px);
+padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08)
+}
+.container{width:90%;max-width:1100px;margin:auto}
+.navbar .container{display:flex;justify-content:center;gap:30px}
+.navbar a{color:white;text-decoration:none;font-weight:600}
+.navbar a:hover{color:#60a5fa}
+header{text-align:center;padding:120px 20px 100px}
+header h1{
+font-size:4.5rem;font-weight:800;
+background:linear-gradient(90deg,#60a5fa,#38bdf8,#22d3ee);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent
+}
+header p{margin-top:15px;color:#cbd5e1;font-size:1.2rem}
+.buttons{margin-top:30px}
+.btn{
+display:inline-block;margin:8px;padding:12px 24px;border-radius:999px;
+text-decoration:none;color:white;
+background:linear-gradient(90deg,#2563eb,#06b6d4);
+transition:.3s ease
+}
+.btn:hover{transform:translateY(-3px)}
+section{padding:50px 0}
+h2{margin-bottom:25px;font-size:2rem}
+.card{
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(12px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:20px;padding:25px;margin-bottom:20px;
+transition:.3s
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.25)}
+.featured{text-align:center}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{
+padding:10px 16px;border-radius:999px;
+background:rgba(96,165,250,.15);
+border:1px solid rgba(96,165,250,.3);
+color:#93c5fd
+}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.stat-card{
+background:rgba(255,255,255,.06);
+border-radius:20px;padding:25px;text-align:center
+}
+.stat-card h3{color:#60a5fa;font-size:2rem}
+details{background:rgba(255,255,255,.06);border-radius:15px;padding:20px}
+summary{cursor:pointer;font-size:1.1rem;font-weight:bold}
+details p{margin-top:15px;color:#cbd5e1}
+footer{text-align:center;padding:40px;color:#94a3b8}
+@media(max-width:768px){header h1{font-size:3rem}}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="container">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header>
+<div class="container">
+<span class="skill">Michigan State University</span>
+<h1>Medhas Kollu</h1>
+<p>
+Supply Chain Management & Computer Science Student<br>
+Broad College of Business<br><br>
+Interested in Data Analytics, Software Development,
+and Technology-Driven Business Solutions.
+</p>
+
+<div class="buttons">
+<a href="https://linkedin.com/in/medhaskollu" target="_blank" class="btn">LinkedIn</a>
+<a href="mailto:medhaskollu@gmail.com" class="btn">Email</a>
+<a href="https://world-cup-bracket-analyzer.onrender.com/" target="_blank" class="btn">World Cup Simulator</a>
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+<h2>About Me</h2>
+<div class="card">
+<p>
+I'm a student at Michigan State University's Broad College of Business pursuing Supply Chain Management while developing technical skills in software development and data analytics. I enjoy building applications, analyzing data, and solving real-world problems through technology.
+</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="stats">
+<div class="stat-card"><h3>5+</h3><p>Projects</p></div>
+<div class="stat-card"><h3>MSU</h3><p>Broad College of Business</p></div>
+<div class="stat-card"><h3>2029</h3><p>Expected Graduation</p></div>
+</div>
+</div>
+</section>
+
+<section id="education">
+<div class="container">
+<h2>Education</h2>
+<div class="card">
+<h3>Michigan State University</h3>
+<p>B.S. Supply Chain Management<br>Computer Science Coursework<br>Expected Graduation: May 2029</p>
+</div>
+<div class="card">
+<h3>Schoolcraft College</h3>
+<p>Dual Enrollment Coursework<br>GPA: 4.0</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Featured Project</h2>
+<div class="card featured">
+<h3>🏆 FIFA World Cup Simulator</h3>
+<p>Interactive simulator that predicts group-stage and knockout-round outcomes and generates tournament brackets.</p>
+<br>
+<a href="https://world-cup-bracket-analyzer.onrender.com/" target="_blank" class="btn">Launch Simulator</a>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2>Projects</h2>
+
+<details><summary>🏀 NBA Performance Analysis</summary><p>Leveraged SQL aggregations and filters to analyze NBA performance data from 2004-2020, identifying trends in scoring efficiency, three-point shooting, and home-court advantage.</p></details>
+
+<details><summary>🚀 Startup Funding Analysis</summary><p>Used SQL to analyze Crunchbase startup funding data, evaluating funding patterns, company status, and industry trends to identify high-potential investment opportunities.</p></details>
+
+<details><summary>📺 YouTube Trending Analysis</summary><p>Queried and ranked YouTube trending data using SQL to examine engagement metrics, category performance, and publishing trends.</p></details>
+
+<details><summary>🚇 London Transit Data Analysis</summary><p>Analyzed Transport for London ridership data using SQL aggregation techniques to uncover travel patterns, peak usage periods, and trip purposes.</p></details>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Experience</h2>
+<div class="card">
+<h3>Volunteer & Cultural Education Assistant</h3>
+<p>Assisted with classroom instruction, event coordination, and student engagement at Manabadi Telugu School, supporting educational and cultural programs.</p>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2>Skills</h2>
+<div class="skills">
+<span class="skill">Python</span>
+<span class="skill">C++</span>
+<span class="skill">SQL</span>
+<span class="skill">HTML/CSS</span>
+<span class="skill">Data Analytics</span>
+<span class="skill">Excel</span>
+<span class="skill">Supply Chain</span>
+<span class="skill">Business Analytics</span>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>Beyond Academics</h2>
+<div class="card">
+<p>Outside of academics, I enjoy cooking, fitness, soccer, and exploring data through sports analytics. I enjoy experimenting with recipes, tracking nutrition, and building projects that combine technology and real-world interests.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2>Contact</h2>
+<div class="card">
+<p><strong>Email:</strong> medhaskollu@gmail.com</p>
+<p><strong>LinkedIn:</strong> https://linkedin.com/in/medhaskollu</p>
+</div>
+</div>
+</section>
+
+<footer>© 2026 Medhas Kollu</footer>
+</body>
+</html>
